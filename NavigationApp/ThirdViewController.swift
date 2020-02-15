@@ -10,21 +10,19 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet var textField: UITextField!
+    
+    var text: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        textField.text = text
     }
+        
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    deinit {
+        print("The ThirdVC has unlouded from memory")
     }
-    */
-
+    
 }
